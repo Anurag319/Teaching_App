@@ -1,0 +1,15 @@
+.headerb{
+    background-color: aqua;
+    margin: 0px 3px;
+    border-radius: 5px;
+    height: 6px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+}
+
+.headerb:hover{
+    background-color: red;
+    transition: 0.5s;
+}
