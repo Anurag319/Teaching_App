@@ -8,6 +8,7 @@ import Theory from './theory';
 import Quiz from './quiz';
 import { studentsquiz, studentsquizpost } from '../../service/api';
 import "../../css/theory.css";
+import Chat from '../chatbot/chatbot';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -119,6 +120,9 @@ const Course = () => {
                 </Grid>
                 <Grid item xs={12} >
                     <Quiz id={id*3+level} displayresult={displayresult} setScore={setScore}/>
+                </Grid>
+                <Grid item xs={12} >
+                    <Chat />
                 </Grid>
             </Grid>
         </div>
